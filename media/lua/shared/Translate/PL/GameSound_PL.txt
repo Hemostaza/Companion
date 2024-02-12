@@ -8,8 +8,7 @@ GameSound_PL = {
 	GameSound_Take4 = "Nareszcie, poka¿esz mi trochê œwiata.",
 
 	GameSound_Forgotten1 = "Pamiêtasz o mnie jeszcze?",
-	GameSound_Forgotten2 = "Ci¹gle tu jestem, i zaczynam siê nudziæ.",
-	GameSound_Forgotten3 = "Nie musisz byæ samotny, weŸ mnie na rêce.",
+	GameSound_Forgotten2 = "Nie musisz byæ samotny, weŸ mnie na rêce.",
 	GameSound_Forgotten4 = "",
 	
 	GameSound_Random1 = "Nie przejmuj siê mn¹ zbytnio, jestem tylko twoj¹ halucynacj¹.",
@@ -33,6 +32,7 @@ GameSound_PL = {
 	
 	GameSound_Bored1 = "Ale tu nudno, porób coœ ciekawego.",
 	GameSound_Bored2 = "Nie nudzisz siê? Ja siê trochê nudzê.",
+	GameSound_Bored3 = "Ci¹gle tu jestem, i zaczynam siê nudziæ.",
 
 	GameSound_
 
