@@ -1,0 +1,4 @@
+Recipes_PL = {
+	Recipe_Introduce = "Przywitaj siê",
+	Recipe_AskForAdvice = "Poproœ o radê",
+}

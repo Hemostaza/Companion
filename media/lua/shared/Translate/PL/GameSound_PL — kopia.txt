@@ -1,0 +1,148 @@
+GameSound_PL = {
+
+	GameSound_Welcome = "Czeœæ, jestem Idnas. Mi³o mi ciê poznaæ."
+
+	GameSound_Take1 = "Hej, Co dziœ robimy?",
+	GameSound_Take2 = "Wiêc co planujesz?",
+	GameSound_Take3 = "Hej hej",
+	GameSound_Take4 = "Nareszcie, poka¿esz mi trochê œwiata.",
+	
+	GameSound_Forgotten1 = "Pamiêtasz o mnie jeszcze?",
+	GameSound_Forgotten2 = "Ci¹gle tu jestem, i zaczynam siê nudziæ.",
+	GameSound_Forgotten3 = "Nie musisz byæ samotny, weŸ mnie na rêce.",
+	GameSound_Forgotten4 = "",
+	
+	GameSound_Random1 = "Nie przejmuj siê mn¹ zbytnio, jestem tylko twoj¹ halucynacj¹.",
+	GameSound_Random2 = "Hej, a co powiesz na krótki odpoczynek?",
+	GameSound_Random3 = "Pamiêtaj, jestem przy tobie.",
+	GameSound_Random4 = "Nie przeszkadzam Ci?",
+	GameSound_Random5 = "Tylko mnie nie zgub.",
+	GameSound_Random6 = "Bêdziemy razem ju¿ na zawsze, a przynajmniej do twojej œmierci.",
+	
+	GameSound_Advice1 = "Potrzebujesz rady? Mo¿e na pocz¹tek upewnij siê, ¿e jesteœ bezpieczny.",
+	GameSound_Advice2 = "¯ycie jest takie krótkie, nie zmarnuj go na walkê z potworami.",
+	GameSound_Advice3 = "Zacznij dodawaæ do swoich potraw wybielacz. Na pocz¹tku mo¿e dziwnie smakowaæ, ale mi mo¿esz zaufaæ.",
+	GameSound_Advice4 = "Nie myœl za du¿o o tym co myœl¹ o tobie inni. Oni ju¿ nie ¿yj¹.",
+	GameSound_Advice5 = "Zostañ chwilê i pos³uchaj. Tak powiedzia³ kiedyœ ktoœ m¹dry, ale Ty nie powinieneœ go s³uchaæ.",
+	GameSound_Advice6 = "Nigdy nie stosuj siê do rad otrzymanych od pluszowej zabawki.",
+	GameSound_Advice7 = "Je¿eli wydawa³o Ci siê, ¿e s³sza³eœ jak zombie mówi, to masz racjê. Wydawa³o Ci siê.",
+	GameSound_Advice8 = "Spêdzaj z rodzin¹ jak najwiêcej czasu. Choæ teraz czas mo¿esz spêdzaæ jedynie ze mn¹."
+	
+	GameSound_Collision1 = "Nie dotykaj ich. S¹ obrzydliwi.",
+	GameSound_Collision2 = "Nie boisz siê zaraziæ od jednego z nich?",
+	GameSound_Collision3 = "Czy ten goœæ nie wygl¹da znajomo? Chyba widzia³am go w telewizji.",
+	GameSound_Collision4 = "Nie czujesz obrzydzenia na widok ich zgni³ych cia³?",
+	
+	GameSound_EnterVehicle1 = "Gdzieœ jedziemy? Spakowa³eœ wszystko? Nie zabraknie nam jedzenia?",
+	GameSound_EnterVehicle2 = "Czy jesteœ pewien, ¿e chcesz jechaæ? To siê mo¿e skoñczyæ tragicznie.",
+	GameSound_EnterVehicle3 = "Prawdopodobnie bêdziesz jedynym kierowc¹, ale powinieneœ uwa¿aæ na drodze. W koñcu jedziemy razem.",
+	
+	GameSound_Raining = "",
+	GameSound_WeatherMatch = "",
+	
+	GameSound_AreWeThereYet = "",
+	GameSound_HitThatTree = "",
+	
+	GameSound_Fight1 = "Hej, a patrzy³eœ za plecy? Tam mo¿e byæ ich wiêcej.",
+	GameSound_Fight2 = "Ciekawe gdzie jest reszta? Mam nadziejê, ¿e nas nie zaskoczy.",
+	GameSound_Fight3 = "Jeden b³¹d i mo¿esz zostaæ jednym z nich.",
+	GameSound_Fight4 = "Mam nadziejê, ¿e ciê nie rozpraszam.",
+	
+	GameSound_Equip1 = "Szykujesz siê do czegoœ? Obyœ nie skoñczy³ jak reszta.",
+	GameSound_Equip2 = "Chyba o czymœ mi nie mówisz. Co zamierzasz zrobiæ?",
+	GameSound_Equip3 = "Gdzieœ siê wybierasz? Tylko uwa¿aj na mnie.",
+	GameSound_Equip4 = "Hej, nie zapominaj, ¿e ja te¿ tu jestem.",
+	
+	GameSound_ThrowRandom1 = "Jesteœ pewien, ¿e ju¿ tego nie potrzebujesz? Mo¿e mi siê to przyda.",
+	GameSound_ThrowRandom2 = "To siê mo¿e jeszcze kiedyœ przydaæ. Nie powinieneœ tego zostawiaæ.",
+	
+	GameSound_ThrowAway1 = "Hej! Hej! Jak œmiesz mnie wyrzucaæ!",
+	GameSound_ThrowAway2 = "Hej! Nie wyrzucaj mnie! Beze mnie jesteœ nikim!",
+	GameSound_ThrowAway3 = "Co robisz?! Zostaniesz ca³kiem sam!",
+	GameSound_ThrowAway4 = "Nie wyrzucaj mnie! Kto dotrzyma ci towarzystwa?",
+	
+	GameSound_NotWeapon1 = "Tylko pamiêtaj, ¿e nie jestem broni¹.",
+	GameSound_NotWeapon2 = "Mam nadziejê, ¿e nie chcesz zrobiæ mi krzywdy.",
+	
+	GameSound_Destroy1 = "Nie bêdziesz u¿ywa³ mnie w ten sposób!",
+	GameSound_Destroy2 = "Niestety, musimy siê rozstaæ.",
+	
+	GameSound_PutAway1 = "Hej, zostawiasz mnie? Poradzisz sobie sam? Nie bêdziesz têskni³?",
+	GameSound_PutAway2 = "Myœlisz, ¿e bêdê tutaj bezpieczna?",
+	GameSound_PutAway3 = "Wrócisz po mnie? Inaczej oboje bêdziemy samotni.",
+	
+	GameSound_Improvised1 = "Nie masz lepszej broni? Tym bêdzie ciê¿ko zrobiæ im krzywdê.",
+	GameSound_Improvised2 = "Szkoda, ¿e nie masz nic lepszego.",
+	GameSound_Improvised3 = "Powinieneœ poszukaæ lepszej broni. Inaczej oboje mo¿emy Ÿle skoñczyæ.",
+	
+	GameSound_Aiming1 = "Czemu nie celujesz w g³owê?",
+	GameSound_Aiming2 = "Powinieneœ celowaæ wy¿ej.",
+	GameSound_Aiming3 = "Pokaza³abym Ci jak siê strzela, ale chyba oboje wiemy jak by siê to skoñczy³o.",
+	GameSound_Aiming4 = "Zajrzyj w lufê i sprawdŸ, czy nic jej nie blokuje. Spokojnie, to bezpieczne.",
+	GameSound_Aiming5 = "Zostaw sobie jedn¹ kulê, tak na wszelki wypadek.",
+	
+	GameSound_Drop1 = "Hej! Coœ ci wypad³o. Ale mo¿e lepiej to zostaw.",
+	GameSound_Drop2 = "Coœ zgubi³eœ, ale lepiej tego teraz nie szukaj.",
+	
+	GameSound_DropMe1 = "Hej! Upuœci³eœ mnie!",
+	GameSound_DropMe2 = "Nie zgub mnie!",
+	GameSound_DropMe3 = "Podnieœ mnie!",
+	
+	GameSound_Bleeding1 = "Oho, czy¿by Ciê ugryŸli. Przykro mi, nied³ugo bêdziemy musieli siê rozstaæ.",
+	GameSound_Bleeding2 = "Czujê krew. Piêkny zapach, ale ty chyba jesteœ ranny.",
+	GameSound_Bleeding3 = "Krwawienie nie ustaje. Mi to nie przeszkadza. Nawet lekko... poprawia humor.",
+	GameSound_Bleeding4 = "Hej. Czy ktoœ Ci ju¿ mówi³ jak piêknie pachnie twoja krew?",
+	
+	GameSound_Bandages = "Szkoda. Lubi³am ten zapach.",
+	GameSound_Bandages2 = "Na pewno musisz nosiæ te banda¿e? Mo¿e je zdejmiesz? Choæ na moment."
+	
+	GameSound_ClothesChange1 = "Tak, teraz wygl¹dasz dobrze. Bêdziesz siê jakoœ prezentowa³.",
+	GameSound_ClothesChange2 = "Hej, wygl¹dasz dobrze. Pasuje Ci ten styl.",
+	
+	GameSound_HolesInClothes = "Czemu nosisz dziurawe ubranie? Wstyd mi siê z tob¹ pokazywaæ. Co z tego, ¿e wszyscy nie ¿yj¹.",
+	
+	GameSound_Starving1 = "Ju¿ d³ugo nic nie jad³eœ, zaczynam siê martwiæ.",
+	GameSound_Starving2 = "Nie ma nigdzie jedzenia? S³yszê jak Ci w brzuchu burczy.",
+	
+	GameSound_Dehydration1 = "Je¿eli czujesz zawroty g³owy z odwodnienia, nie krêpuj siê. Zemdlej.",
+	
+	GameSound_Sick = "Czujesz to? Postêpuj¹c¹ chorobê. Ja czujê. Nie jest dobrze.",
+	GameSound_Sick2	= "le siê czujesz? To mog¹ byæ te zranienia. Nie z³apa³eœ ¿adnej infekcji?",
+	
+	GameSound_Cooking = "Gotujesz coœ? Mo¿e dodasz wybielacza? Nie, nie, zaufaj mi.",
+	
+	GameSound_Rest = "",
+	GameSound_Sit = "",
+	
+	GameSound_Talking1 = "Masz czas na rozmowê? Chêtnie pos³ucham.",
+	GameSound_Talking2 = "Przepraszam, zamyœli³am siê o... Nie wa¿ne o czym.",
+	GameSound_Talking3 = "Nie rozpraszaj siê teraz rozmow¹, skup siê na tym co robi³eœ.",
+	GameSound_Talking4 = "Czy rozmowa z wyimaginowan¹ towarzyszk¹ nie kwalifikuje siê jako schorzenie?",
+
+	GameSound_OpenWindow1 = "W³amujesz siê oknem?",
+	GameSound_OpenWindow2 = "Próbowa³eœ wejœæ drzwiami?",
+	GameSound_OpenWindow3 = "Jak nie dasz rady otworzyæ okna to mo¿esz je wybiæ. Tylko nie mn¹.",
+
+	GameSound_OpenWindow4 = "Œwie¿e powietrze. Mo¿e zaraz wyjdziemy na zewn¹trz?",
+	
+	GameSound_ThroughWindow1 = "Wchodzisz oknem jak z³odziej. Podoba mi siê to.",
+	GameSound_ThroughWindow2 = "Tylko nie w³¹cz alarmu, bo nie bêdziemy jedynymi którzy tu wchodz¹.",
+
+	GameSound_ThroughWindow3 = "Na prawdê wychodzisz przez okno?",
+	GameSound_ThroughWindow4 = "S³ysza³eœ o czymœ takim jak drzwi?,
+	GameSound_ThroughWindow5 = "Nastêpnym razem wyjdŸ przez drzwi.",
+
+	GameSound_TakeOff1 = "Czemu to zdjemujesz? Chcesz siê tylko umyæ, prawda?",
+	GameSound_TakeOff2 = "Nie wiem co planujesz, ale powinieneœ odpuœciæ."
+
+	GameSound_TakeOff3 = "Chcesz walczyæ z martwymi na piêœci?"
+	GameSound_TakeOff4 = "Jest a¿ tak ciep³o?",
+
+	GameSound_Nude1 = "Teraz jesteœ zadowolony?",
+	GameSound_Nude2 = "Myœlê, ¿e ubranie pomog³o by ci przetrwaæ te trudne czasy bardziej ni¿ halucynacje.",
+	GameSound_Nude3 = "Jak byœ teraz umar³, to twoje zw³oki by siê wstydzi³y.",
+
+
+	
+	
+}

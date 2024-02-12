@@ -1,0 +1,16 @@
+Sandbox_PL = {
+
+	Sandbox_Companion = "Kompan",
+	Sandbox_TalkSensitive = "Czêstotliwoœæ rozmowy",
+	Sandbox_TalkOnZombieCollide = "Szansa rozmowy przy kolizji z zombie",
+	Sandbox_TalkOnEnterVehicle = "Szansa rozmowy podczas wsiadania",
+	Sandbox_TalkOnEquipPrimary = "Szansa rozmowy przy ekwipowaniu broni",
+	Sandbox_TalkOnZombieHit = "Szansa rozmowy przy trafieniu zombie",
+	Sandbox_TalkOnIdle = "Szansa rozmowy",
+	Sandbox_TalkOnGetDamage = "Szansa rozmowy przy otrzymaniu obra¿eñ",
+	Sandbox_TalkOnThrowItem = "Szansa rozmowy przy wyrzuceniu przedmiotu",
+	Sandbox_TalkOnBandages = "Szansa rozmowy przy zmianie opatrunku",
+	Sandbox_TalkOnDropItem = "Szansa rozmowy przy zgubieniu przedmiotu",
+
+
+}

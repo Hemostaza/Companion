@@ -1,0 +1,110 @@
+VERSION = 1,
+
+option Companion.TalkSensitive
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = Companion,
+	translation = TalkSensitive,
+}
+
+option Companion.TalkOnZombieCollide
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 20,
+	page = Companion,
+	translation = TalkOnZombieCollide,
+}
+
+option Companion.TalkOnZombieHit
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 20,
+	page = Companion,
+	translation = TalkOnZombieHit,
+}
+
+option Companion.TalkOnGetDamage
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = Companion,
+	translation = TalkOnGetDamage,
+}
+
+option Companion.TalkOnIdle
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 5,
+	page = Companion,
+	translation = TalkOnIdle,
+}
+
+option Companion.TalkOnDropItem
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 80,
+	page = Companion,
+	translation = TalkOnDropItem,
+}
+
+option Companion.TalkOnThrowItem
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 5,
+	page = Companion,
+	translation = TalkOnThrowItem,
+}
+
+option Companion.TalkOnEnterVehicle
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = Companion,
+	translation = TalkOnEnterVehicle,	
+}
+
+option Companion.TalkOnEquipPrimary
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = Companion,
+	translation = TalkOnEquipPrimary,	
+}
+
+option Companion.TalkOnBandages
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 50,
+	page = Companion,
+	translation = TalkOnBandages,	
+}
+
+option Companion.DebugOption
+{
+	type = boolean,
+	default = false,
+
+	page = Companion,
+	translation = DebugOption,
+}

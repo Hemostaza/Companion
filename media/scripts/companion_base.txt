@@ -1,0 +1,27 @@
+module Base
+{
+	model Idnas
+	{
+		mesh = weapons/1handed/Idnas,
+		texture = WorldItems/Idnas,
+		scale = 0.01,
+	}
+	model IdnasWorld
+	{
+		mesh = WorldItems/Doll,
+		texture = WorldItems/Idnas,
+		scale = 0.4,
+	}
+	model IdnasSec
+	{
+		mesh = weapons/1handed/IdnasSec,
+		texture = WorldItems/IdnasSec,
+		scale = 0.01,
+	}
+	model IdnasSecWorld
+	{
+		mesh = WorldItems/IdnasSec_World,
+		texture = WorldItems/IdnasSec,
+		scale = 0.005,
+	}
+}
