@@ -11,6 +11,7 @@ Sandbox_PL = {
 	Sandbox_TalkOnThrowItem = "Szansa rozmowy przy wyrzuceniu przedmiotu",
 	Sandbox_TalkOnBandages = "Szansa rozmowy przy zmianie opatrunku",
 	Sandbox_TalkOnDropItem = "Szansa rozmowy przy zgubieniu przedmiotu",
+	Sandbox_TalkOnEquipDoll = "Sznasa rozmowy przy wyci¹gniêciu laleczki",
 
 
 }

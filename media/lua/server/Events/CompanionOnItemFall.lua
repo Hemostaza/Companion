@@ -10,3 +10,15 @@ local function onItemFall(item)
 	end
 end
 Events.onItemFall.Add(onItemFall)
+
+local function OnKeyPressed(key)
+	if debugValue then
+		if key==Keyboard.KEY_NUMPAD2  then
+			canTalk=true;
+			print("num 2");
+			--RandomAche();
+			dropHandItems();
+		end
+	end
+end
+Events.OnKeyPressed.Add(OnKeyPressed)

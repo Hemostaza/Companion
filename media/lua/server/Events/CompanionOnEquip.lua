@@ -2,7 +2,7 @@ local companion = require("CompanionMain");
 
 local function OnEquipPrimary(character, inventoryItem)
 	if inventoryItem~=nil then --and instanceof(inventoryItem,"HandWeapon")) then print(inventoryItem:getCategories()); end
-		if inventoryItem:getName() == "Idnas" then
+		if inventoryItem:getName() == "Idnas" and chance(SandboxVars.Companion.TalkOnEquipPrimary or 50) then
 			local rand = ZombRand(3);
 			if(rand>0) then
 				commonDialog("NotWeapon",2);
@@ -20,7 +20,7 @@ Events.OnEquipPrimary.Add(OnEquipPrimary)
 
 local function OnEquipSecondary(character, inventoryItem)
 	if inventoryItem~=nil then
-		if inventoryItem:getName()=="Idnas" then
+		if inventoryItem:getName()=="Idnas" and chance(SandboxVars.Companion.TalkOnEquipPrimary or 70) then
 			commonDialog("Take",4);
 		end
 	end

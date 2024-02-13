@@ -6,34 +6,43 @@ end
 Events.EveryHours.Add(EveryHours)
 
 local function EveryTenMinutes() 
-	updateThatPlayer();
+	--updateThatPlayer();
+	bittenParts = player:getBodyDamage():getNumPartsBitten();
 	wornItems = thatPlayer:getWornItems();
 	if canTalk then -- jak może mówić
 		if chance(SandboxVars.Companion.TalkOnIdle or 5) and companionInInventory() then --jak chance zwróci true(x% albo 5%) i laleczka jest w ekwipunku
 			if companionInHand() then --jak laleczka jest w którejs rece
 				if chance(5) and not thatPlayer:isOutside() then --jak chance zwróci true(5%) i gracz jest w budynku
-					commonDialog("RandomInside",1) --dialog
+					commonDialog("RandomInside",2) --dialog
 				else 
 					if ( CheckIfNude(wornItems,true) or CheckIfNude(wornItems,false) ) and chance(70) then
 						NudeDialogue(wornItems,"Idle","NudeTakeOffShirt","IdlePantless",2,1,1)
-					else
+					elseif not MoodleDialogue() and chance(80) then
 						commonDialog("Random",6); --dialog
+					elseif chance(1) then
+						ScareDialogue();
+					else
+						commonDialog("Advice",8); --rada.
 					end
 				end
 			else --jeżeli laleczka nie jest w ręku to znaczy że jest tylko w ekwipunku
 				if  chance(15) then --15% szanWSsy na to że odjebie jedną z akcji
 					RandomAche();
 				else
-					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 50)
+					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 5)
 					commonDialog("Forgotten",2);
 				end
 			end
 		end
 		-- jak zombiaki idą za tobą nawet jak laleczka nie może mówić ale jest w rękach.
-	elseif (stats:getNumChasingZombies() > 0 or stats:getNumVisibleZombies() > 0) and companionInHand() then
-		stats:setPanic(0);
-		commonDialog("BeBrave",1);
-	else --laleczka nie może mówić i nie gonią zombiaki
+	elseif (stats:getNumChasingZombies() > 0 or stats:getNumVisibleZombies() > 0) and companionInHand() and chance(20) then
+		if chance(98) then
+			stats:setPanic(0);
+			commonDialog("BeBrave",2);
+		else
+			ScareDialogue();
+		end
+	else --laleczka nie może mówić i nie gonią zombiaki i nie trafi 20%
 		local var = SandboxVars.Companion.TalkSensitivity or 50;
 		canTalk = ZombRand(100) <= var and true or false
 	end
@@ -41,11 +50,10 @@ end
 Events.EveryTenMinutes.Add(EveryTenMinutes)
 
 local function OnKeyPressed(key)
-	print(key);
 	if debugValue then
-		if key==31 then
+		if key==Keyboard.KEY_NUMPAD1  then
+			print("num 1");
 			canTalk=true;
-			--RandomAche();
 			EveryTenMinutes();
 		end
 	end

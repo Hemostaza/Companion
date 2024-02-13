@@ -3,7 +3,7 @@ function initialize(playerIndex, player)
 	stats = thatPlayer:getStats();
 	damage = thatPlayer:getBodyDamage();
 	wornItems = thatPlayer:getWornItems();
-
+	bittenParts = 0;
 	emitter = thatPlayer:getEmitter();
 	playerColor = thatPlayer:getSpeakColour();
 	idnasColor = Color.red;
@@ -93,15 +93,16 @@ function companionInHand()
 end
 
 function updateThatPlayer()
-	stats = thatPlayer:getStats();
-	damage = thatPlayer:getBodyDamage();
+	--stats = thatPlayer:getStats();
+	--damage = thatPlayer:getBodyDamage();
+	--11bittenParts = damage:getNumPartsBitten();
 end
 
 function changeToDoll(remIdnas)
 	thatPlayer:getInventory():AddItem("Doll");
 	thatPlayer:setPrimaryHandItem(nil);
 	thatPlayer:getInventory():Remove(remIdnas);
-	updateThatPlayer();
+	--updateThatPlayer();
 	stats:setAnger(1);
 	damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 60)
 end
@@ -133,26 +134,20 @@ end
 
 function RandomAche()
 	print("random ache");
-	updateThatPlayer();
+	--updateThatPlayer();
 	local rand = ZombRand(100);
 	if rand>90 then
-		commonDialog("Headache",1);
+		commonDialog("Headache",3);
 		damage:getBodyPart(BodyPartType.Head):setAdditionalPain(30);
 	elseif rand>80 then
-		print("hungry");
-		commonDialog("Hungry",2);
-		local newhunger = stats:getHunger()+0.2;
-		stats:setHunger(newhunger);
+		commonDialog("Hungry",3);
+		stats:setHunger(stats:getHunger()+0.2);
 	elseif rand>40 then
-		print("Sad");
-		commonDialog("Sadness",1);
-		damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 50)
+		commonDialog("Sadness",2);
+		damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 25)
 	elseif rand>=0 then
-		print("Bored");
 		commonDialog("Bored",3);
-		local newBored = damage:getBoredomLevel()+50;
 		damage:setBoredomLevel(damage:getBoredomLevel() + 50)
-		--stats:setBoredom(newBored);
 	end
 end
 
@@ -167,12 +162,14 @@ function commonDialog(line,num)
 		thatPlayer:Say(getText("GameSound_"..line..rand));
 		audio = emitter:playSound(line..rand);
 		--sadness reduction
-		updateThatPlayer();
+		--updateThatPlayer();
 		damage:setUnhappynessLevel(damage:getUnhappynessLevel() - 10)
 
 		thatPlayer:setSpeakColour(playerColor);
+		return true;
 	else 
 		print("Line or num is nil");
+		return false;
 	end
 end
 
@@ -186,11 +183,11 @@ function AskForAdvice(items, result, player)
 end
 
 function Welcome(items, result, player)
-	commonDialog("Welcome",1);
+	commonDialog("Welcome",3);
 end
 
 function NudeDialogue(worn,l1,l2,l3,n1,n2,n3)
-	if CheckIfNude(worn,true) and CheckIfNude(worn,false) then
+	if CheckIfNude(worn,true) and CheckIfNude(worn,false) and chance(80) then
 		commonDialog("Nude"..l1,n1); 
 	elseif CheckIfNude(worn,true) then
 		commonDialog("Nude"..l2,n2);
@@ -199,14 +196,35 @@ function NudeDialogue(worn,l1,l2,l3,n1,n2,n3)
 	end
 end
 
+function MoodleDialogue()
+	if thatPlayer:getMoodleLevel(MoodleType.Panic) >1 and chance(80) and not thatPlayer:isSitOnGround() then
+		commonDialog("CalmDown",2);
+	elseif thatPlayer:getMoodleLevel(MoodleType.Hungry) >1 and chance(25) then
+		commonDialog("Starving",2);
+	elseif thatPlayer:getMoodleLevel(MoodleType.Thirst) >1 and chance(25) then
+		commonDialog("Dehydration",2);
+	elseif thatPlayer:getMoodleLevel(MoodleType.Sick) >1 and chance(50) then
+		commonDialog("Sick",3);
+	elseif thatPlayer:getMoodleLevel(MoodleType.HasACold) >1 and chance(50) then
+		commonDialog("Bored",3);
+	elseif thatPlayer:getMoodleLevel(MoodleType.Tired) >0 and chance(50) then
+		commonDialog("Sleepy",2);
+	else 
+		return false;
+	end
+	return true
+end
+
+function ScareDialogue()
+	stats:setPanic(1);
+	commonDialog("Startle",3);​
+end
+
 ---debug---
 local function OnKeyPressed(key)
-	--print(debugValue);
-	if debugValue then
-		if key==34 then
-			--RandomAche();
-			print(thatPlayer:getCurrentActionContextStateName());
-		end
+	if key==Keyboard.KEY_NUMPAD0  then
+		print("num 0");
+		canTalk=true;
 	end
 end
 Events.OnKeyPressed.Add(OnKeyPressed)

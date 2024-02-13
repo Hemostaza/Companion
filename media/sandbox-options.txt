@@ -35,7 +35,7 @@ option Companion.TalkOnGetDamage
 	type = double,
 	min = 0,
 	max = 100,
-	default = 50,
+	default = 20,
 	page = Companion,
 	translation = TalkOnGetDamage,
 }
@@ -88,6 +88,16 @@ option Companion.TalkOnEquipPrimary
 	default = 50,
 	page = Companion,
 	translation = TalkOnEquipPrimary,	
+}
+
+option Companion.TalkOnEquipDoll
+{
+	type = double,
+	min = 0,
+	max = 100,
+	default = 70,
+	page = Companion,
+	translation = TalkOnEquipDoll,	
 }
 
 option Companion.TalkOnBandages

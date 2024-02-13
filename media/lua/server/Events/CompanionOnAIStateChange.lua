@@ -1,9 +1,9 @@
 local companion = require("CompanionMain");
 
 function OnAIStateChange(character, newState, oldState)
-	--print(instanceof(character,"IsoPlayer")); --I don't fuckn know why this wont work in if...
-	if character:getClass() == "IsoPlayer" then
-		--print("ŁO KURWA KOLIZJA Z ZOMBIE JA PIERDOLE!")
+	print(instanceof(character,"IsoPlayer")); --I don't fuckn know why this wont work in if...
+	kurwamac = instanceof(character,"IsoPlayer") 
+	if kurwamac == true  then
 		local stateName = newState:getName();
 		print(stateName);
 		if companionInHand() and chance(20) then
