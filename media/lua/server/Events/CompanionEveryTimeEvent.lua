@@ -20,7 +20,7 @@ local function EveryTenMinutes()
 					elseif not MoodleDialogue() and chance(80) then
 						commonDialog("Random",6); --dialog
 					elseif chance(1) then
-						ScareDialogue();
+						ScareDialogue("PIZDA");
 					else
 						commonDialog("Advice",8); --rada.
 					end
@@ -40,7 +40,7 @@ local function EveryTenMinutes()
 			stats:setPanic(0);
 			commonDialog("BeBrave",2);
 		else
-			ScareDialogue();
+			ScareDialogue("CHUJ");
 		end
 	else --laleczka nie może mówić i nie gonią zombiaki i nie trafi 20%
 		local var = SandboxVars.Companion.TalkSensitivity or 50;

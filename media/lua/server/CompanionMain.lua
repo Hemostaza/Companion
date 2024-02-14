@@ -1,10 +1,12 @@
+local CompanionMain = { }
+
+dialogues = require("CompanionDialogues");
 function initialize(playerIndex, player)
 	thatPlayer = player;
 	stats = thatPlayer:getStats();
 	damage = thatPlayer:getBodyDamage();
 	wornItems = thatPlayer:getWornItems();
 	bittenParts = 0;
-	emitter = thatPlayer:getEmitter();
 	playerColor = thatPlayer:getSpeakColour();
 	idnasColor = Color.red;
 	print(thatPlayer:getName());
@@ -12,8 +14,6 @@ function initialize(playerIndex, player)
 		--inventory:addItem(inventory:AddItem("Companion.Idnas"));
 	--end
 	canTalk = false;
-	audio = 1;
-
 	debugValue = SandboxVars.Companion.DebugOption or false;
 
 	lowerLocations = {
@@ -54,8 +54,6 @@ function initialize(playerIndex, player)
 end
 Events.OnCreatePlayer.Add(initialize);
 
-local CompanionMain = { }
-
 function tableContains(table, value)
 	for i = 1,#table do
 	  if (table[i] == value) then
@@ -93,25 +91,26 @@ function companionInHand()
 end
 
 function updateThatPlayer()
-	--stats = thatPlayer:getStats();
-	--damage = thatPlayer:getBodyDamage();
-	--11bittenParts = damage:getNumPartsBitten();
+	stats = thatPlayer:getStats();
+	damage = thatPlayer:getBodyDamage();
+	bittenParts = damage:getNumPartsBitten();
 end
 
 function changeToDoll(remIdnas)
 	thatPlayer:getInventory():AddItem("Doll");
 	thatPlayer:setPrimaryHandItem(nil);
 	thatPlayer:getInventory():Remove(remIdnas);
-	--updateThatPlayer();
+--	updateThatPlayer();
 	stats:setAnger(1);
 	damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 60)
 end
 
 function chance(value)
-	if debugValue and not emitter:isPlaying(audio) then
+	print("fromMute");
+	if debugValue then
 		--return true
 	end
-	if(canTalk == true) and not emitter:isPlaying(audio) then
+	if(canTalk == true) then
 		local rand = ZombRand(100);
 		if(value>rand) then
 			return true;
@@ -134,7 +133,7 @@ end
 
 function RandomAche()
 	print("random ache");
-	--updateThatPlayer();
+--	updateThatPlayer();
 	local rand = ZombRand(100);
 	if rand>90 then
 		commonDialog("Headache",3);
@@ -153,23 +152,21 @@ end
 
 ----------------------------------------------
 --------------------DIALOGS-------------------
-
-function commonDialog(line,num)
+function commonDialog(line)
+	print(line," ma ",dialogues[line]," linii")
 	canTalk = false;
-	if line and num then
-		rand = ZombRand(num)+1;
+	value = dialogues[line];
+	if dialogues[line] then
+		rand = ZombRand(dialogues[line])+1;
 		thatPlayer:setSpeakColour(idnasColor);
 		thatPlayer:Say(getText("GameSound_"..line..rand));
-		audio = emitter:playSound(line..rand);
-		--sadness reduction
-		--updateThatPlayer();
+		--audio = emitter:playSound(line..dialogues[line]);
 		damage:setUnhappynessLevel(damage:getUnhappynessLevel() - 10)
-
 		thatPlayer:setSpeakColour(playerColor);
-		return true;
+		--return commonDialog
 	else 
-		print("Line or num is nil");
-		return false;
+		print("There is no dialogue line");
+		--return false;
 	end
 end
 
@@ -216,8 +213,8 @@ function MoodleDialogue()
 end
 
 function ScareDialogue()
-	stats:setPanic(1);
-	commonDialog("Startle",3);​
+	stats:setPanic(50);
+	commonDialog("Startle",3);
 end
 
 ---debug---
@@ -225,6 +222,7 @@ local function OnKeyPressed(key)
 	if key==Keyboard.KEY_NUMPAD0  then
 		print("num 0");
 		canTalk=true;
+		ScareDialogue();
 	end
 end
 Events.OnKeyPressed.Add(OnKeyPressed)
@@ -238,5 +236,4 @@ local function OnAddMessage(chatMessage, tabId)
 end
 Events.OnAddMessage.Add(OnAddMessage)
 
-
-return CompanionMain
+--return CompanionMain
