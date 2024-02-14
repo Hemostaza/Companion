@@ -1,0 +1,4 @@
+Recipes_PL = {
+	Recipe_Introduce = "Introduce",
+	Recipe_AskForAdvice = "Ask for advice",
+}

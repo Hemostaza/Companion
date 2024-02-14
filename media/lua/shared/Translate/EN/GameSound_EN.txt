@@ -1,0 +1,213 @@
+GameSound_EN = {
+
+	GameSound_Welcome1 = "Hi, I'm Idnas. Nice to meet you.",
+	GameSound_Welcome2 = "Hi, you finally spoke up.",
+	GameSound_Welcome3 = "Well hello. How long have you been waiting to talk?",
+
+GameSound_Take1 = "Hey, What are we doing today?",
+GameSound_Take2 = "So what are you planning?",
+GameSound_Take3 = "Hey hey",
+GameSound_Take4 = "Finally, you can show me some of the world.",
+
+GameSound_Forgotten1 = "Do you still remember me?",
+GameSound_Forgotten2 = "You don't have to be lonely, take me in your arms.",
+GameSound_Forgotten3 = "Get me out finally, I want to see the world.",
+GameSound_Forgotten4 = "Forgot about me? Contact me.",
+
+GameSound_Random1 = "Don't worry too much about me, I'm just your hallucination.",
+GameSound_Random2 = "Hey, how about a little rest?",
+GameSound_Random3 = "Remember, I'm with you.",
+GameSound_Random4 = "Am I bothering you?",
+GameSound_Random5 = "Just don't lose me.",
+GameSound_Random6 = "We will be together forever, or at least until you die.",
+
+GameSound_RandomInside1 = "What a pigsty here.",
+GameSound_RandomInside2 = "Why don't we go outside? Get some fresh air.",
+
+GameSound_Headache1 = "My head hurts. Look for something to relieve the pain.",
+GameSound_Headache2 = "I have a headache. Do you have any pills?",
+GameSound_Headache3 = "Do you have any painkillers? My head hurts.",
+
+GameSound_Hungry1 = "I'm hungry. Maybe we should grab something to eat?",
+GameSound_Hungry2 = "I'm hungry. Make something to eat. Please.",
+GameSound_Hungry3 = "Can you find me something to eat? I'm hungry.",
+
+GameSound_Sleepy1 = "I'm tired. When do we go to sleep?",
+GameSound_Sleepy2 = "When are you going to go to sleep? Is it time?",
+
+GameSound_Sadness1 = "I feel sad. Shall we talk for a while?",
+GameSound_Sadness2 = "Talk to me a little. I'm not just decoration here.",
+
+GameSound_Bored1 = "It's boring here, do something interesting.",
+GameSound_Bored2 = "Aren't you bored? I'm a little bored.",
+GameSound_Bored3 = "I'm still here, and I'm getting bored.",
+
+GameSound_Advice1 = "Need some advice? Maybe make sure you're safe first.",
+GameSound_Advice2 = "Life is so short, don't waste it fighting monsters.",
+GameSound_Advice3 = "Start adding bleach to your dishes. It may taste weird at first, but you can trust me.",
+GameSound_Advice4 = "Don't think too much about what others think about you. They're already dead.",
+GameSound_Advice5 = "Stay a while and listen. This is what a wise person once said, but you shouldn't listen to him.",
+GameSound_Advice6 = "Never follow advice given by a stuffed toy.",
+GameSound_Advice7 = "If you thought you heard a zombie talking, you're right. You thought it.",
+GameSound_Advice8 = "Spend as much time as possible with your family. Although right now you can only spend time with me."
+
+GameSound_Collision1 = "Don't touch them. They're disgusting.",
+GameSound_Collision2 = "Aren't you afraid of getting infected by one of them?",
+GameSound_Collision3 = "Doesn't this guy look familiar? I think I saw him on TV.",
+GameSound_Collision4 = "Don't you feel disgusted by the sight of their rotten bodies?",
+
+GameSound_EnterVehicle1 = "Are we going somewhere? Have you packed everything? Will we run out of food?",
+GameSound_EnterVehicle2 = "Are you sure you want to go? It could end tragically.",
+GameSound_EnterVehicle3 = "You'll probably be the only driver, but you should be careful on the road. After all, we're going together.",
+
+GameSound_Raining = "",
+GameSound_WeatherMatch = "",
+
+GameSound_AreWeThereYet = "",
+GameSound_HitThatTree = "",
+
+GameSound_Fight1 = "Hey, have you looked behind the back? There might be more of them there.",
+GameSound_Fight2 = "I wonder where the rest of them are? I hope they don't surprise us.",
+GameSound_Fight3 = "One mistake and you could become one of them.",
+GameSound_Fight4 = "I hope I'm not distracting you.",
+
+GameSound_Equip1 = "Are you getting ready for something? Hopefully you don't end up like the rest.",
+GameSound_Equip2 = "I think you're not telling me something. What are you going to do?",
+GameSound_Equip3 = "Are you going somewhere? Just watch out for me.",
+GameSound_Equip4 = "Hey, don't forget I'm here too.",
+
+GameSound_ThrowRandom1 = "Are you sure you don't need this anymore? I might need it.",
+GameSound_ThrowRandom2 = "This may come in handy someday. You shouldn't leave it behind.",
+
+GameSound_ThrowAway1 = "Hey! Hey! How dare you throw me out!",
+GameSound_ThrowAway2 = "Hey! Don't throw me out! You're nothing without me!",
+GameSound_ThrowAway3 = "What are you doing?! You'll be left all alone!",
+GameSound_ThrowAway4 = "Don't throw me out! Who'll keep you company?",
+
+GameSound_NotWeapon1 = "Just remember, I'm not a weapon.",
+GameSound_NotWeapon2 = "I hope you don't mean to hurt me.",
+
+GameSound_Destroy1 = "You won't use me like that!",
+GameSound_Destroy2 = "Unfortunately, we have to part ways.",
+GameSound_Destroy3 = "We won't play like this.",
+
+GameSound_PutAway1 = "Hey, are you leaving me? Can you handle it on your own? Won't you miss me?",
+GameSound_PutAway2 = "Do you think I'll be safe here?",
+GameSound_PutAway3 = "Will you come back for me? Otherwise we'll both be lonely.",
+
+	GameSound_Improvised1 = "Don't you have a better weapon? It'll be hard to hurt them with these.",
+GameSound_Improvised2 = "Too bad you don't have something better.",
+GameSound_Improvised3 = "You should look for a better weapon. Otherwise, we both may end up badly.",
+
+GameSound_Aiming1 = "Why don't you aim for the head?",
+GameSound_Aiming2 = "You should aim higher.",
+GameSound_Aiming3 = "I would show you how to shoot, but I think we both know how it would end.",
+GameSound_Aiming4 = "Look into the barrel and make sure nothing is blocking it. Don't worry, it's safe.",
+GameSound_Aiming5 = "Leave one bullet for yourself, just in case.",
+
+GameSound_Drop1 = "Hey! Something came up. But maybe you'd better leave it.",
+GameSound_Drop2 = "You've lost something, but you better not look for it now.",
+
+GameSound_DropMe1 = "Hey! You dropped me!",
+GameSound_DropMe2 = "Don't lose me!",
+GameSound_DropMe3 = "Pick me up!",
+
+GameSound_Bite1 = "Oho, they've bitten you. I'm sorry, we'll have to part soon.",
+GameSound_Bite2 = "I guess we don't have much time left together.",
+GameSound_Bite3 = "I'm sorry. This is the end of you, and therefore it's the end of me. This is the end of us.",
+
+GameSound_Bleeding1 = "I smell blood. It smells beautiful, but you must be injured.",
+GameSound_Bleeding2 = "The bleeding doesn't stop. It doesn't bother me. Even slightly... it makes me feel better.",
+GameSound_Bleeding3 = "Hi. Has anyone told you how good your blood smells?",
+
+GameSound_Bandages1 = "Too bad. I liked the smell.",
+GameSound_Bandages2 = "Are you sure you have to wear these bandages? Why don't you take them off? Just for a moment."
+
+GameSound_ClothesChange1 = "Yes, you look good now. You'll look presentable.",
+GameSound_ClothesChange2 = "Hey, you look good. This style suits you.",
+
+GameSound_HolesInClothes1 = "Why are you wearing clothes with holes in them? I'm embarrassed to be seen with you. So what if everyone's dead.",
+
+GameSound_Starving1 = "You haven't eaten for a long time, I'm starting to worry.",
+GameSound_Starving2 = "Is there no food anywhere? I can hear your stomach growling.",
+
+GameSound_StarvingDying1 = "You need food, and that means I need food too. We need food."
+GameSound_StarvingDying2 = "I am in awe that you have gone so long without food and that you are unable to find any."
+
+GameSound_Dehydration1 = "If you feel dizzy from dehydration, feel free. Pass out.",
+GameSound_Dehydration2 = "About 60% of the human body is water. Not in your case.",
+
+GameSound_DehydrationDying1 = "You can survive without food for over 3 weeks, and without water for about 3 days. And the counter will start soon.",
+GameSound_DehydrationDying2 = "Are you aware of the dangers of dehydration?",
+
+GameSound_Sick1 = "Can you feel it? A progressive disease. I can feel it. It's not good.",
+GameSound_Sick2 = "Are you feeling bad? It could be those injuries. Haven't you caught any infection?",
+GameSound_Sick3 = "Oh, you're not feeling well. Lie down and rest.
+
+GameSound_Cooking = "Are you cooking something? Maybe add some bleach? No, no, trust me.",
+
+GameSound_Rest = "",
+GameSound_Sit = "",
+
+GameSound_Talking1 = "Do you have time to talk? I'd love to listen.",
+GameSound_Talking2 = "Sorry, I was thinking about... It doesn't matter what.",
+GameSound_Talking3 = "Don't get distracted by the conversation right now, focus on what you were doing.",
+GameSound_Talking4 = "Doesn't talking to an imaginary companion qualify as a medical condition?",
+
+GameSound_OpenWindowOut1 = "Are you breaking in through the window?",
+GameSound_OpenWindowOut2 = "Have you tried entering through the door?",
+GameSound_OpenWindowOut3 = "If you can't open the window, you can break it. Just not with me.",
+
+GameSound_OpenWindowIn1 = "Fresh air. Shall we go outside soon?",
+
+GameSound_ThroughWindowIn1 = "You come in through the window like a thief. I like it.",
+GameSound_ThroughWindowIn2 = "Just don't sound the alarm, or we won't be the only ones coming in here.",
+
+GameSound_ThroughWindowOut1 = "Are you really going out the window?",
+GameSound_ThroughWindowOut2 = "Have you heard of doors?,
+GameSound_ThroughWindowOut3 = "Next time, exit through the door.",
+
+	GameSound_NudeTakeOff1 = "Are you satisfied now?",
+GmaeSound_NudeTakeOff2 = "Feeling better now? Isn't this exhibitionism?",
+GameSound_NudeTakeOff3 = "I don't know why you think this is a good idea."
+GameSound_NudeTakeOff4 = "I always knew there was something wrong with you.",
+
+GameSound_NudeTakeOffShirt1 = "Is it that warm?",
+GameSound_NudeTakeOffShirt2 = "Why do you take your clothes off? Aren't you afraid of being bitten?",
+GameSound_NudeTakeOffShirt3 = "Isn't this one of those ideas that end in death?",
+
+GameSound_TakeOffPants1 = "Why are you taking these off? You just want to wash up, right?",
+GameSound_TakeOffPants2 = "I don't know what you're planning, but you should let it go."
+GameSound_TakeOffPants3 = "Dead people probably won't judge you, but I won't give up on the opportunity. 3/10"
+
+GameSound_NudeIdle1 = "I think clothes would help you get through these difficult times more than hallucinations.",
+GameSound_NudeIdle2 = "If you died now, your corpse would be ashamed of itself.",
+GameSound_NudeIdle3 = "Can you feel that breeze on your naughty parts?",
+GameSound_NudeIdle4 = "When I look at you, it seems that the dead have more to offer.",
+
+GameSound_NudeIdleShirtless1 = "Actually, it's quite nice to feel free. I should go shirtless myself more often.";
+
+GameSound_NudeIdlePantless1 = "Put your pants back on. You have nothing to brag about.",
+GameSound_NudeIdlePantless2 = "If you think no one will judge you now, you're probably forgetting about me.",
+
+GameSound_NudeFight1 = "Do you really have to fight dressed like this?",
+GameSound_NudeFigtt2 = "I see you like taking risks. Why don't you try hugging one?",
+GameSound_NudeFight3 = "If a dead person bites you where it shouldn't, I won't be able to help you.",
+
+GameSound_NudeShirtlessFight1 = "Shirtless, aren't you afraid of being bitten?",
+GameSound_NudeShirtlessFight2 = "Yes. Fight like gladiators. It's very... Interesting.",
+
+GameSound_NudePantlessFight1 = "If I were you, I wouldn't worry about getting bitten on the leg, just something else.",
+GameSound_NudePantlessFight2 = "I guess the dead aren't interested in your gear.",
+
+GameSound_Startle1 = "Boo! Ha, are you scared?"
+GameSound_Startle2 = "Hahaha!",
+GameSound_Startle3 = "They say people with a sense of guilt are easier to scare with loud noises... Hahaha, did I scare you?",
+
+GameSound_BeBrave1 = "Don't be afraid, you can do it! I believe in you!",
+GameSound_BeBrave2 = "Relax, I'm with you. Don't be afraid.",
+
+GameSound_CalmDown1 = "Now, now, calm down. Don't be afraid.",
+GameSound_CalmDown2 = "Everything is fine now, calm down.",
+	
+}

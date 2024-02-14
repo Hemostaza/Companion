@@ -26,4 +26,4 @@ function OnAIStateChange(character, newState, oldState)
 	--siadanie
 	--wstawanie
 end
-Events.OnAIStateChange.Add(OnAIStateChange)
+--Events.OnAIStateChange.Add(OnAIStateChange)

@@ -1,0 +1,17 @@
+Sandbox_PL = {
+
+	Sandbox_Companion = "Companion",
+	Sandbox_TalkSensitive = "Talk sensitiveness",
+	Sandbox_TalkOnZombieCollide = "Chance to talk when collide with zombie",
+	Sandbox_TalkOnEnterVehicle = "Chance to talk when entering vehicle",
+	Sandbox_TalkOnEquipPrimary = "Chance to talk when equipping weapon",
+	Sandbox_TalkOnZombieHit = "Chance to talk when hitting zombie",
+	Sandbox_TalkOnIdle = "Chance to talk",
+	Sandbox_TalkOnGetDamage = "Chance to talk when getting damage",
+	Sandbox_TalkOnThrowItem = "Chance to talk when discarding an item",
+	Sandbox_TalkOnBandages = "Chance to talk when changing bandages.",
+	Sandbox_TalkOnDropItem = "Chance to talk when dropping an item",
+	Sandbox_TalkOnEquipDoll = "Chance to talk when equipping doll",
+
+
+}

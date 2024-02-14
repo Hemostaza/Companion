@@ -8,7 +8,7 @@ local function OnHitZombie(zombie, character, bodyPartType, handWeapon)
 			changeToDoll(handWeapon);
 			return
 		end
-		if chance(5) and ( CheckIfNude(wornItems,false) or CheckIfNude(wornItems,true) ) then--5% szansy podczas bycia nagim
+		if chance(SandboxVars.Companion.TalkOnZombieHit > 0 and 5 or 0) and ( CheckIfNude(wornItems,false) or CheckIfNude(wornItems,true) ) then--5% szansy podczas bycia nagim
 			NudeDialogue(wornItems,"Fight","ShirtlessFight","PantlessFight",1,1,1);
 		elseif chance(SandboxVars.Companion.TalkOnZombieHit or 20) then --20% lub ustawienie sandbox
 			if companionInSecondHand() then --jeżeli laleczka w drugiej ręce
