@@ -1,23 +1,25 @@
 local companion = require("CompanionMain");
 
 function OnAIStateChange(character, newState, oldState)
-	print(instanceof(character,"IsoPlayer")); --I don't fuckn know why this wont work in if...
-	kurwamac = instanceof(character,"IsoPlayer") 
-	if kurwamac == true  then
-		local stateName = newState:getName();
-		print(stateName);
+	--print(instanceof(character,"IsoPlayer")); --I don't fuckn know why this wont work in if...
+	--print(kurwamac);
+	-- print(newState, "KURWA NIE JEST NULLEM ",newState,newState,newState)
+	-- print(newState," kurwa czym jest newstate" );  --fucking fuck newState was not null but even getClass() won't work. I'm stupid or something?
+	if instanceof(character,"IsoPlayer") then
+		print(character:getActionStateName());
+		local actionName = character:getActionStateName();
 		if companionInHand() and chance(20) then
-			if stateName=="ClimbThroughWindowState" then
+			if actionName=="climbwindow" then
 				if character:isOutside() then
-					commonDialog("ThroughWindowIn",2);
+					commonDialog("ThroughWindowIn");
 				else 
-					commonDialog("ThroughWindowOut",3);
+					commonDialog("ThroughWindowOut");
 				end
-			elseif stateName=="OpenWindowState" then
+			elseif actionName=="openwindow" then
 				if character:isOutside() then
-					commonDialog("OpenWindowOut",3);
+					commonDialog("OpenWindowOut");
 				else 
-					commonDialog("OpenWindowIn",1);
+					commonDialog("OpenWindowIn");
 				end
 			end
 		end
@@ -26,4 +28,4 @@ function OnAIStateChange(character, newState, oldState)
 	--siadanie
 	--wstawanie
 end
---Events.OnAIStateChange.Add(OnAIStateChange)
+Events.OnAIStateChange.Add(OnAIStateChange)

@@ -6,7 +6,7 @@ local function OnCharacterCollide(player, character)
 			--kolizja gracza z zombie
 			if(instanceof(character,"IsoZombie")) and
             chance(SandboxVars.Companion.TalkOnZombieCollide or 20) then 
-				commonDialog("Collision",4);
+				commonDialog("Collision");
 			else 
 				--jeżeli kolizja między graczami
 			end

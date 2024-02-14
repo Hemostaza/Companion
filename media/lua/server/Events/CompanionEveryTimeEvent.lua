@@ -13,16 +13,16 @@ local function EveryTenMinutes()
 		if chance(SandboxVars.Companion.TalkOnIdle or 5) and companionInInventory() then --jak chance zwróci true(x% albo 5%) i laleczka jest w ekwipunku
 			if companionInHand() then --jak laleczka jest w którejs rece
 				if chance(5) and not thatPlayer:isOutside() then --jak chance zwróci true(5%) i gracz jest w budynku
-					commonDialog("RandomInside",2) --dialog
+					commonDialog("RandomInside") --dialog
 				else 
 					if ( CheckIfNude(wornItems,true) or CheckIfNude(wornItems,false) ) and chance(70) then
-						NudeDialogue(wornItems,"Idle","NudeTakeOffShirt","IdlePantless",2,1,1)
+						NudeDialogue(wornItems,"NudeIdle","ShirtlessIdle","PantlessIdle")
 					elseif not MoodleDialogue() and chance(80) then
-						commonDialog("Random",6); --dialog
+						commonDialog("Random"); --dialog
 					elseif chance(1) then
-						ScareDialogue("PIZDA");
+						ScareDialogue();
 					else
-						commonDialog("Advice",8); --rada.
+						commonDialog("Advice"); --rada.
 					end
 				end
 			else --jeżeli laleczka nie jest w ręku to znaczy że jest tylko w ekwipunku
@@ -30,7 +30,7 @@ local function EveryTenMinutes()
 					RandomAche();
 				else
 					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 5)
-					commonDialog("Forgotten",2);
+					commonDialog("Forgotten");
 				end
 			end
 		end
@@ -38,9 +38,9 @@ local function EveryTenMinutes()
 	elseif (stats:getNumChasingZombies() > 0 or stats:getNumVisibleZombies() > 0) and companionInHand() and chance(20) then
 		if chance(98) then
 			stats:setPanic(0);
-			commonDialog("BeBrave",2);
+			commonDialog("BeBrave");
 		else
-			ScareDialogue("CHUJ");
+			ScareDialogue();
 		end
 	else --laleczka nie może mówić i nie gonią zombiaki i nie trafi 20%
 		local var = SandboxVars.Companion.TalkSensitivity or 50;

@@ -15,9 +15,9 @@ function ISInventoryTransferAction:start()
 					updateThatPlayer();
 					stats:setAnger(10);
 					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 60)
-					commonDialog("ThrowAway",4);
+					commonDialog("ThrowAway");
 				elseif chance(SandboxVars.Companion.TalkOnThrowItem or 5) and companionInSecondHand() then 
-					commonDialog("ThrowRandom",2);
+					commonDialog("ThrowRandom");
 				end
 			end
 		end

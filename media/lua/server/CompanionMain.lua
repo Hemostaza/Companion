@@ -4,7 +4,7 @@ dialogues = require("CompanionDialogues");
 function initialize(playerIndex, player)
 	thatPlayer = player;
 	stats = thatPlayer:getStats();
-	damage = thatPlayer:getBodyDamage();
+	bodyDamage = thatPlayer:getBodyDamage();
 	wornItems = thatPlayer:getWornItems();
 	bittenParts = 0;
 	playerColor = thatPlayer:getSpeakColour();
@@ -92,8 +92,8 @@ end
 
 function updateThatPlayer()
 	stats = thatPlayer:getStats();
-	damage = thatPlayer:getBodyDamage();
-	bittenParts = damage:getNumPartsBitten();
+	bodyDamage = thatPlayer:getBodyDamage();
+	bittenParts = bodyDamage:getNumPartsBitten();
 end
 
 function changeToDoll(remIdnas)
@@ -102,11 +102,10 @@ function changeToDoll(remIdnas)
 	thatPlayer:getInventory():Remove(remIdnas);
 --	updateThatPlayer();
 	stats:setAnger(1);
-	damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 60)
+	bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 60)
 end
 
 function chance(value)
-	print("fromMute");
 	if debugValue then
 		--return true
 	end
@@ -136,17 +135,17 @@ function RandomAche()
 --	updateThatPlayer();
 	local rand = ZombRand(100);
 	if rand>90 then
-		commonDialog("Headache",3);
-		damage:getBodyPart(BodyPartType.Head):setAdditionalPain(30);
+		commonDialog("Headache");
+		bodyDamage:getBodyPart(BodyPartType.Head):setAdditionalPain(30);
 	elseif rand>80 then
-		commonDialog("Hungry",3);
+		commonDialog("Hungry");
 		stats:setHunger(stats:getHunger()+0.2);
 	elseif rand>40 then
-		commonDialog("Sadness",2);
-		damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 25)
+		commonDialog("Sadness");
+		bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 25)
 	elseif rand>=0 then
-		commonDialog("Bored",3);
-		damage:setBoredomLevel(damage:getBoredomLevel() + 50)
+		commonDialog("Bored");
+		bodyDamage:setBoredomLevel(bodyDamage:getBoredomLevel() + 50)
 	end
 end
 
@@ -155,17 +154,17 @@ end
 function commonDialog(line)
 	print(line," ma ",dialogues[line]," linii")
 	canTalk = false;
-	value = dialogues[line];
 	if dialogues[line] then
 		rand = ZombRand(dialogues[line])+1;
 		thatPlayer:setSpeakColour(idnasColor);
 		thatPlayer:Say(getText("GameSound_"..line..rand));
 		--audio = emitter:playSound(line..dialogues[line]);
-		damage:setUnhappynessLevel(damage:getUnhappynessLevel() - 10)
+		bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() - 10)
 		thatPlayer:setSpeakColour(playerColor);
 		--return commonDialog
-	else 
-		print("There is no dialogue line");
+	else
+		thatPlayer:Say(getText("ERROR There is no dialogue with name ")..line);
+		print("There is no dialogue line with that name");
 		--return false;
 	end
 end
@@ -173,7 +172,7 @@ end
 function AskForAdvice(items, result, player)
 	--print(emitter:isPlaying(audio),"emitteret");
 	--updatePosition = true;
-	commonDialog("Advice",8);
+	commonDialog("Advice");
 	print("hungerMultiplier",thatPlayer:getHungerMultiplier());
 	print("lasthoursleped",thatPlayer:getLastHourSleeped());
 	--Events.OnPlayerUpdate.Add(PI_AzaMusic_Update)
@@ -183,13 +182,13 @@ function Welcome(items, result, player)
 	commonDialog("Welcome",3);
 end
 
-function NudeDialogue(worn,l1,l2,l3,n1,n2,n3)
+function NudeDialogue(worn,l1,l2,l3)
 	if CheckIfNude(worn,true) and CheckIfNude(worn,false) and chance(80) then
-		commonDialog("Nude"..l1,n1); 
+		commonDialog(l1); 
 	elseif CheckIfNude(worn,true) then
-		commonDialog("Nude"..l2,n2);
+		commonDialog(l2);
 	else 
-		commonDialog("Nude"..l3,n3);
+		commonDialog(l3);
 	end
 end
 

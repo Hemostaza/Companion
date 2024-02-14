@@ -5,6 +5,6 @@ function ISUnequipAction:perform()
 	unequipedItem = self.item:getBodyLocation();
 	if companionInHand() and (tableContains(upperLocations, unequipedItem) 
 			or tableContains(lowerLocations, unequipedItem) ) then
-		return NudeDialogue(self.character:getWornItems() ,"TakeOff","TakeOffShirt","TakeOffPants",1,1,2)
+		return NudeDialogue(self.character:getWornItems() ,"TakeOff","TakeOffShirt","TakeOffPants")
 	end
 end
