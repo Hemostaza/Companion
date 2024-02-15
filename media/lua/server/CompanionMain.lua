@@ -64,8 +64,9 @@ function tableContains(table, value)
   end
 
 function companionInInventory()
+	print(thatPlayer:getInventory():contains("IdnasDoll"));
 	if(instanceof(thatPlayer,"IsoPlayer")) then
-		itis = thatPlayer:getInventory():contains("Idnas");
+		itis = thatPlayer:getInventory():contains("IdnasDoll");
 		return itis;
 	else 
 		return false;
@@ -74,13 +75,13 @@ end
 
 function companionInSecondHand()
 	if thatPlayer:getSecondaryHandItem() then
-		return thatPlayer:getSecondaryHandItem():getName()=="Idnas";
+		return thatPlayer:getSecondaryHandItem():getType()=="IdnasDoll";
 	else return false end
 end
 
 function companionInMainHand()
 	if thatPlayer:getPrimaryHandItem() then
-		return thatPlayer:getPrimaryHandItem():getName()=="Idnas";
+		return thatPlayer:getPrimaryHandItem():getType()=="IdnasDoll";
 	else return false end
 end
 
@@ -109,16 +110,24 @@ function chance(value)
 	if debugValue then
 		--return true
 	end
+	if value==100 then
+		return true
+	end
 	if(canTalk == true) then
+		print(canTalk," cantalk");
 		local rand = ZombRand(100);
 		if(value>rand) then
+			print("chance bylo true ",value," ",rand);
 			return true;
 		else
+			print("chance bylo false ",value," ",rand);
 			return false;
 		end
 	else
+		print("chance bylo false ",canTalk);
 		return false;
 	end
+	return false;
 end
 
 function CheckIfNude(wornItems, upperBody)
@@ -220,8 +229,8 @@ end
 local function OnKeyPressed(key)
 	if key==Keyboard.KEY_NUMPAD0  then
 		print("num 0");
-		canTalk=true;
-		ScareDialogue();
+		print(thatPlayer:getInventory():contains("IdnasDoll"));
+		print(thatPlayer:getSecondaryHandItem():getType())
 	end
 end
 Events.OnKeyPressed.Add(OnKeyPressed)

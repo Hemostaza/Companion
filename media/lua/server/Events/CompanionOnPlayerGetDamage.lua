@@ -8,14 +8,14 @@ local function OnPlayerGetDamage(player, damageType, damage)
 			if bodyDamage:getNumPartsBitten() > bittenParts then
 				commonDialog("Bite");
 				bittenParts=player:getBodyDamage():getNumPartsBitten();
-			end
-		elseif chance(SandboxVars.Companion.TalkOnGetDamage or 20) then
-			if damageType == "BLEEDING" and chance(5) then
-				commonDialog("Bleeding");
-			elseif damageType == "THIRST" then
-				commonDialog("DehydrationDying")
-			elseif damageType == "HUNGRY" then
-				commonDialog("StarvingDying")
+			elseif chance(SandboxVars.Companion.TalkOnGetDamage or 20) then
+				if damageType == "BLEEDING" and chance(1) then
+					commonDialog("Bleeding");
+				elseif damageType == "THIRST" then
+					commonDialog("DehydrationDying")
+				elseif damageType == "HUNGRY" then
+					commonDialog("StarvingDying")
+				end
 			end
 		end
 	end

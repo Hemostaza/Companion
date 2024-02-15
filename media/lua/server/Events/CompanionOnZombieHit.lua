@@ -33,7 +33,7 @@ local function OnHitZombie(zombie, character, bodyPartType, handWeapon)
 					end
 				else
 					if chance(5) then
-						damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 5)
+						bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 5)
 						commonDialog("Forgotten");
 					end
 				end

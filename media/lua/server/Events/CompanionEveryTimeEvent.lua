@@ -29,7 +29,7 @@ local function EveryTenMinutes()
 				if  chance(15) then --15% szanWSsy na to że odjebie jedną z akcji
 					RandomAche();
 				else
-					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 5)
+					bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 5)
 					commonDialog("Forgotten");
 				end
 			end

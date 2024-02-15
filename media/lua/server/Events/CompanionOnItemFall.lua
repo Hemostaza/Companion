@@ -1,9 +1,9 @@
 local companion = require("CompanionMain");
 
 local function onItemFall(item)
-	if item:getName() == "Idnas" then
+	if item:getType() == "IdnasDoll" then
 		updateThatPlayer();
-		damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 30)
+		bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 30)
 		commonDialog("DropMe"); -- upusciles mnie!
 	elseif(companionInSecondHand()) and chance(SandboxVars.Companion.TalkOnDropItem or 80) then
 		commonDialog("Drop");
@@ -17,7 +17,7 @@ local function OnKeyPressed(key)
 			canTalk=true;
 			print("num 2");
 			--RandomAche();
-			dropHandItems();
+			thatPlayer:dropHandItems();
 		end
 	end
 end

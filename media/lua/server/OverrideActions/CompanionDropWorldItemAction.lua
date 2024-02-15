@@ -4,9 +4,9 @@ dropWorldItem = ISDropWorldItemAction.start
 
 function ISDropWorldItemAction:start()    
     dropWorldItem(self)  
-	if companionInInventory() and self.item:getName() == "Idnas" then
-		damage = thatPlayer:getBodyDamage();
-		damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 30)
+	if companionInInventory() and self.item:getType() == "IdnasDoll" then
+		--damage = thatPlayer:getBodyDamage();
+		bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 30)
 		commonDialog("PutAway");
 		--print(self.item);
 	end

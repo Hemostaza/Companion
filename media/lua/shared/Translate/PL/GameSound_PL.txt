@@ -142,7 +142,7 @@ GameSound_PL = {
 
 	GameSound_Sick1 = "Czujesz to? Postêpuj¹c¹ chorobê. Ja czujê. Nie jest dobrze.",
 	GameSound_Sick2	= "le siê czujesz? To mog¹ byæ te zranienia. Nie z³apa³eœ ¿adnej infekcji?",
-	GameSound_Sick3 = "Oj nie jest z tob¹ najlepiej. Po³ó¿ siê, odpocznij.
+	GameSound_Sick3 = "Oj nie jest z tob¹ najlepiej. Po³ó¿ siê, odpocznij.",
 	
 	GameSound_Cooking = "Gotujesz coœ? Mo¿e dodasz wybielacza? Nie, nie, zaufaj mi.",
 	
@@ -164,35 +164,35 @@ GameSound_PL = {
 	GameSound_ThroughWindowIn2 = "Tylko nie w³¹cz alarmu, bo nie bêdziemy jedynymi którzy tu wchodz¹.",
 
 	GameSound_ThroughWindowOut1 = "Na prawdê wychodzisz przez okno?",
-	GameSound_ThroughWindowOut2 = "S³ysza³eœ o czymœ takim jak drzwi?,
+	GameSound_ThroughWindowOut2 = "S³ysza³eœ o czymœ takim jak drzwi?",
 	GameSound_ThroughWindowOut3 = "Nastêpnym razem wyjdŸ przez drzwi.",
 
-	GameSound_TakeOff1 = "Teraz jesteœ zadowolony?",
+	GameSound_TakeOff1 = "Czujesz siê lepiej bez tych ubrañ?",
 	GmaeSound_TakeOff2 = "Ju¿ siê czujesz lepiej? To nie jest ekshibicjonizm?",
 	GameSound_TakeOff3 = "Nie wiem czemu uwa¿asz to za dobry pomys³."
 	GameSound_TakeOff4 = "Zawsze wiedzia³am, ¿e coœ jest z tob¹ nie tak.",
 
-	GameSound_TakeOffShirt1 = "Jest a¿ tak ciep³o?",
+	GameSound_TakeOffShirt1 = "Jest Ci a¿ tak ciep³o?",
 	GameSound_TakeOffShirt2 = "Czemu zdejmujesz ubranie? Nie boisz siê pogryzienia?",
 	GameSound_TakeOffShirt3 = "To nie jest jeden z tych pomys³ów które koñcz¹ siê œmierci¹?",
 
-	GameSound_TakeOffPants1 = "Czemu to zdjemujesz? Chcesz siê tylko umyæ, prawda?",
+	GameSound_TakeOffPants1 = "Czemu to zdejmujesz? Chcesz siê tylko umyæ, prawda?",
 	GameSound_TakeOffPants2 = "Nie wiem co planujesz, ale powinieneœ odpuœciæ."
-	GameSound_TakeOffPants3 = "Martwii raczej nie bêd¹ cie oceniaæ, ale ja nie zrezygnujê z okazji. 3/10"
+	GameSound_TakeOffPants3 = "Martwii raczej nie bêd¹ Ciê oceniaæ, ale ja nie zrezygnujê z okazji. 3/10"
 
-	GameSound_NudeIdle1 = "Myœlê, ¿e ubranie pomog³o by ci przetrwaæ te trudne czasy bardziej ni¿ halucynacje.",
+	GameSound_NudeIdle1 = "Myœlê, ¿e ubranie pomog³o by Ci przetrwaæ te trudne czasy bardziej ni¿ halucynacje.",
 	GameSound_NudeIdle2 = "Jak byœ teraz umar³, to twoje zw³oki by siê wstydzi³y.",
 	GameSound_NudeIdle3 = "Czujesz ten wiaterek w niesfornych czêœciach cia³a?",
 	GameSound_NudeIdle4 = "Jak tak na Ciebie patrzê, to wydaje mi siê, ¿e martwi maj¹ do zaoferowania wiêcej.",
 
-	GameSound_ShirtlessIdle1 = "W zasadzie, to ca³kiem przyjemnie uczucie wolnoœci. Powinnam sama czêœciej chodziæ bez koszulki.";
+	GameSound_ShirtlessIdle1 = "W zasadzie, to ca³kiem przyjemne uczucie wolnoœci. Powinnam sama czêœciej chodziæ bez koszulki.";
 
 	GameSound_PantlessIdle1 = "Za³ó¿ w koñcu spodnie. Nie masz siê czym chwaliæ.",
-	GameSound_PantlessIdle2 = "Je¿eli wydaje Ci siê, ¿e nikt cie teraz nie oceni, to chyba zapominasz o mnie.",
+	GameSound_PantlessIdle2 = "Je¿eli wydaje Ci siê, ¿e nikt Ciê teraz nie oceni, to chyba zapominasz o mnie.",
 
 	GameSound_NudeFight1 = "Na prawdê musisz walczyæ ubrany w ten sposób?",
 	GameSound_NudeFigtt2 = "Widzê, ¿e lubisz ryzyko. Mo¿e spróbuj jednego przytuliæ?",
-	GameSound_NudeFight3 = "Je¿eli martwy ugryzie Ciê tam gdzie nie powinien, to nie bêdê mog³a Ci pomóc.",
+	GameSound_NudeFight3 = "Je¿eli martwy ugryzie Ciê tam gdzie nie powinien, to nie zamierzam Ci pomagaæ.",
 
 	GameSound_ShirtlessFight1 = "Tak bez koszulki? nie boisz siê pogryzienia?",
 	GameSound_ShirtlessFight2 = "Tak. Walczcie jak gladiatorzy. To bardzo... Interesuj¹ce.",
@@ -202,7 +202,7 @@ GameSound_PL = {
 
 	GameSound_Startle1 = "Bu! Ha, przestraszy³eœ siê?"
 	GameSound_Startle2 = "Hahaha!",
-	GameSound_Startle3 = "Podobno ludzi z poczuciem winy ³atwiej wystraszyæ g³oœnym ... Hahaha, przestraszy³am Ciê?",
+	GameSound_Startle3 = "Podobno ludzi skupionych ³atwiej ... Przestraszyæ!",
 
 	GameSound_BeBrave1 = "Nie bój siê, dasz radê! Wierzê w Ciebie!",
 	GameSound_BeBrave2 = "Spokojnie, jestem z Tob¹. Nic siê nie bój.",

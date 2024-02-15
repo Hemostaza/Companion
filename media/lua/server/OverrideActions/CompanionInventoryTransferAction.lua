@@ -11,10 +11,10 @@ function ISInventoryTransferAction:start()
 		--print("kompanion w inverto",companionInInventory(chara));
 		if companionInInventory() then
 			if self.srcContainer:getType() == "none" then
-				if self.item:getName() == "Idnas" then
+				if self.item:getType() == "IdnasDoll" then
 					updateThatPlayer();
 					stats:setAnger(10);
-					damage:setUnhappynessLevel(damage:getUnhappynessLevel() + 60)
+					bodyDamage:setUnhappynessLevel(bodyDamage:getUnhappynessLevel() + 60)
 					commonDialog("ThrowAway");
 				elseif chance(SandboxVars.Companion.TalkOnThrowItem or 5) and companionInSecondHand() then 
 					commonDialog("ThrowRandom");
