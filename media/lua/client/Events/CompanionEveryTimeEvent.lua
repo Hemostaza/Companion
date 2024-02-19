@@ -17,12 +17,14 @@ local function EveryTenMinutes()
 				else 
 					if ( CheckIfNude(wornItems,true) or CheckIfNude(wornItems,false) ) and chance(70) then
 						NudeDialogue(wornItems,"NudeIdle","ShirtlessIdle","PantlessIdle")
-					elseif not MoodleDialogue() and chance(80) then
-						commonDialog("Random"); --dialog
-					elseif chance(1) then
-						ScareDialogue();
-					else
-						commonDialog("Advice"); --rada.
+					elseif not MoodleDialogue() then
+						if chance(80) then
+							commonDialog("Random"); --dialog
+						elseif chance(1) then
+							ScareDialogue();
+						else
+							commonDialog("Advice"); --rada.
+						end
 					end
 				end
 			else --jeżeli laleczka nie jest w ręku to znaczy że jest tylko w ekwipunku

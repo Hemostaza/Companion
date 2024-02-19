@@ -2,7 +2,7 @@ local CompanionMain = { }
 
 dialogues = require("CompanionDialogues");
 function initialize(playerIndex, player)
-	thatPlayer = player;
+	thatPlayer = getSpecificPlayer(playerIndex);
 	stats = thatPlayer:getStats();
 	bodyDamage = thatPlayer:getBodyDamage();
 	wornItems = thatPlayer:getWornItems();
@@ -114,17 +114,17 @@ function chance(value)
 		return true
 	end
 	if(canTalk == true) then
-		print(canTalk," cantalk");
+		--print(canTalk," cantalk");
 		local rand = ZombRand(100);
 		if(value>rand) then
-			print("chance bylo true ",value," ",rand);
+			--print("chance bylo true ",value," ",rand);
 			return true;
 		else
-			print("chance bylo false ",value," ",rand);
+			--print("chance bylo false ",value," ",rand);
 			return false;
 		end
 	else
-		print("chance bylo false ",canTalk);
+		--print("chance bylo false ",canTalk);
 		return false;
 	end
 	return false;
@@ -140,7 +140,7 @@ function CheckIfNude(wornItems, upperBody)
 end
 
 function RandomAche()
-	print("random ache");
+	--print("random ache");
 --	updateThatPlayer();
 	local rand = ZombRand(100);
 	if rand>90 then
@@ -161,7 +161,7 @@ end
 ----------------------------------------------
 --------------------DIALOGS-------------------
 function commonDialog(line)
-	print(line," ma ",dialogues[line]," linii")
+	--print(line," ma ",dialogues[line]," linii")
 	canTalk = false;
 	if dialogues[line] then
 		rand = ZombRand(dialogues[line])+1;
@@ -182,8 +182,8 @@ function AskForAdvice(items, result, player)
 	--print(emitter:isPlaying(audio),"emitteret");
 	--updatePosition = true;
 	commonDialog("Advice");
-	print("hungerMultiplier",thatPlayer:getHungerMultiplier());
-	print("lasthoursleped",thatPlayer:getLastHourSleeped());
+	--print("hungerMultiplier",thatPlayer:getHungerMultiplier());
+	--print("lasthoursleped",thatPlayer:getLastHourSleeped());
 	--Events.OnPlayerUpdate.Add(PI_AzaMusic_Update)
 end
 
@@ -227,10 +227,12 @@ end
 
 ---debug---
 local function OnKeyPressed(key)
-	if key==Keyboard.KEY_NUMPAD0  then
-		print("num 0");
-		print(thatPlayer:getInventory():contains("IdnasDoll"));
-		print(thatPlayer:getSecondaryHandItem():getType())
+	if debugValue then
+		if key==Keyboard.KEY_NUMPAD0  then
+			print("num 0");
+			print(thatPlayer:getInventory():contains("IdnasDoll"));
+			print(thatPlayer:getSecondaryHandItem():getType())
+		end
 	end
 end
 Events.OnKeyPressed.Add(OnKeyPressed)

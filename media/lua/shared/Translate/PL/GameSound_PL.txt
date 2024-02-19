@@ -201,7 +201,7 @@ GameSound_PL = {
 	GameSound_PantlessFight2 = "S¹dzê, ¿e martwi nie s¹ zainteresowani twoim sprzêtem.",
 
 	GameSound_Startle1 = "Bu! Ha, przestraszy³eœ siê?"
-	GameSound_Startle2 = "Hahaha!",
+	GameSound_Startle2 = "... ... ... BU!",
 	GameSound_Startle3 = "Podobno ludzi skupionych ³atwiej ... Przestraszyæ!",
 
 	GameSound_BeBrave1 = "Nie bój siê, dasz radê! Wierzê w Ciebie!",

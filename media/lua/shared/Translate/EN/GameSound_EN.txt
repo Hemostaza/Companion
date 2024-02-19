@@ -201,7 +201,7 @@ GameSound_NudePantlessFight1 = "If I were you, I wouldn't worry about getting bi
 GameSound_NudePantlessFight2 = "I guess the dead aren't interested in your gear.",
 
 GameSound_Startle1 = "Boo! Ha, are you scared?"
-GameSound_Startle2 = "Hahaha!",
+GameSound_Startle2 = "... ... ... BU!",
 GameSound_Startle3 = "They say people with a sense of guilt are easier to scare with loud noises... Hahaha, did I scare you?",
 
 GameSound_BeBrave1 = "Don't be afraid, you can do it! I believe in you!",

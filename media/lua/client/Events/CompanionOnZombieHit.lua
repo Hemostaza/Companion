@@ -10,7 +10,7 @@ local function OnHitZombie(zombie, character, bodyPartType, handWeapon)
 		end
 		if chance(SandboxVars.Companion.TalkOnZombieHit > 0 and 5 or 0) and ( CheckIfNude(wornItems,false) or CheckIfNude(wornItems,true) ) then--5% szansy podczas bycia nagim
 			NudeDialogue(wornItems,"NudeFight","ShirtlessFight","PantlessFight");
-		elseif chance(SandboxVars.Companion.TalkOnZombieHit or 20) then --20% lub ustawienie sandbox
+		elseif chance(SandboxVars.Companion.TalkOnZombieHit or 5) then --20% lub ustawienie sandbox
 			if companionInSecondHand() then --jeżeli laleczka w drugiej ręce
 				local weapCat = handWeapon:getCategories():get(0);
 				if ( weapCat=="Improvised" or weapCat=="SmallBlade" or weapCat=="Unarmed" ) and chance(80) then --jeżeli jedna z improwizowanych broni i szansa 80%
