@@ -110,9 +110,6 @@ function chance(value)
 	if debugValue then
 		--return true
 	end
-	if value==100 then
-		return true
-	end
 	if(canTalk == true) then
 		--print(canTalk," cantalk");
 		local rand = ZombRand(100);
