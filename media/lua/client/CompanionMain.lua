@@ -14,6 +14,7 @@ function initialize(playerIndex, player)
 		--inventory:addItem(inventory:AddItem("Companion.Idnas"));
 	--end
 	canTalk = false;
+	adviced = false;
 	debugValue = SandboxVars.Companion.DebugOption or false;
 
 	lowerLocations = {
@@ -94,6 +95,7 @@ end
 function updateThatPlayer()
 	stats = thatPlayer:getStats();
 	bodyDamage = thatPlayer:getBodyDamage();
+	adviced = false;
 	bittenParts = bodyDamage:getNumPartsBitten();
 end
 
@@ -178,7 +180,10 @@ end
 function AskForAdvice(items, result, player)
 	--print(emitter:isPlaying(audio),"emitteret");
 	--updatePosition = true;
-	commonDialog("Advice");
+	if not adviced then
+		commonDialog("Advice");
+		adviced = true;
+	end
 	--print("hungerMultiplier",thatPlayer:getHungerMultiplier());
 	--print("lasthoursleped",thatPlayer:getLastHourSleeped());
 	--Events.OnPlayerUpdate.Add(PI_AzaMusic_Update)
